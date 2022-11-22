@@ -47,7 +47,8 @@ class FollowViewSet(
     mixins.CreateModelMixin,
     mixins.ListModelMixin,
     mixins.RetrieveModelMixin,
-    viewsets.GenericViewSet):
+    viewsets.GenericViewSet
+):
     serializer_class = FollowSerializer
     pagination_class = CustomPagination
     filter_backends = (filters.SearchFilter,)
